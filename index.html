@@ -143,40 +143,56 @@
             <li>Adicionar o bot como administrador do canal (opcional) para registro de ações.</li>
         </ul>
         <div class="alert">
+            ⚠️ Apenas administradores com permissão para alterar os dados do grupo podem usar esse comando.
             ⚠️ <a href="#permissao-de-uso">Verifique a permissão de uso.</a>
         </div>
     </section>
     <section id="configuracoes">
         <h2>⚙️ Configurações</h2>
-        <p>Acesse as configurações com o comando:</p>
+        <p>Todas as configurações do bot sao acessadas através do comando <code>/menu</code></p>
+        <p>Na tela inicial, além dos botões de configurações, você encontrará as seguintes informações:</p>
         <ul>
-            <li><code>/menu</code> - Exibe o menu de configurações.</li>
+            <li><b>Estado</b> - Indica grupo aberto ou fechado.
+            <li><b>Apagar</b> - indica se o bot irá apagar as mensagens quando o grupo estiver fechado.</li>
+            <li><b>Registros</b> - indica se há um canal de registros definido.</li>
+            <li><b>Permitidos</b> - indica a quantidade de administradores com permissão.</li>
+            <li><b>Vencimento</b> - indica o vencimento da sua permissão de uso.</li>
         </ul>
     </section>
     <section id="permissoes">
         <h2>🔒 Permissões</h2>
-        <p>Defina quais administradores podem abrir e fechar o grupo. Eles não terão suas mensagens apagadas enquanto o grupo estiver fechado.</p>
+        <p>O botão de permissões é usado para definir quais administradores irão possuir permissão para abrir e fechar o grupo.</p>
+        <div class="alert">
+            ⚠️ Administradores com essa permissão não terão suas mensagens apagadas quando grupo estiver fechado.
     </section>
     <section id="registros">
         <h2>🔍 Registros</h2>
-        <p>Configure um canal para registrar as ações do bot, como:</p>
+        <p>O botão de registros é usado para definir um canal que irá registrar as ações do bot, como:</p>
         <ul>
             <li>Abertura e fechamento do grupo.</li>
-            <li>Alterações de permissões de administradores.</li>
+            <li>Administradores feitos livre.</li>
         </ul>
+        <p>Também será possível alterar ou remover o canal de registros a qualquer momento 
+        <div class="alert">
+            ⚠️ O bot precisa ser administrador do canal.
+        </div>
     </section>
     <section id="apagar">
         <h2>🗑 Apagar</h2>
-        <p>Defina se mensagens de administradores sem permissão serão apagadas enquanto o grupo estiver fechado.</p>
+        <p>O botão apagar alterna a definição se o bot irá apagar ou não as mensagens dos administradores sem permissão quando o grupo estiver fechado.</p>
     </section>
     <section id="livre">
         <h2>🆓 Livre</h2>
-        <p>Permita que administradores sem permissão enviem mensagens sem serem apagadas. Use os comandos:</p>
+        <p>O recurso "livre" é usado para que administradores sem permissão não tenham suas mensagens apagadas quando o grupo estiver fechado.</p>
+        <p>Para esse recurso, use os comandos:</p>
         <ul>
             <li><code>/livre</code> - Adiciona um administrador como livre.</li>
             <li><code>/nolivre</code> - Remove um administrador do status livre.</li>
             <li><code>/listlivre</code> - Lista os administradores livres.</li>
         </ul>
+        <div class="alert">
+            ⚠️ Apanas administradores com permissão podem usar esses comandos.
+            ⚠️ O comando deve ser usado com o id do administrador ou em resposta a uma mensagem sua.
     </section>
     <section id="permissao-de-uso">
         <h2>🔑 Permissão de uso</h2>
