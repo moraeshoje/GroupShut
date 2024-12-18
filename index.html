@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guia de Utilização do Bot</title>
+    <title>Guia de Utilização Group Shut</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -18,6 +18,11 @@
             color: white;
             padding: 20px 10px;
             text-align: center;
+        }
+        header img {
+            max-width: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
         }
         section {
             max-width: 800px;
@@ -61,13 +66,58 @@
             color: white;
             font-size: 0.9em;
         }
+        nav {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 10px 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #0088cc;
+        }
+        .btn {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 10px 20px;
+            background: #0088cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background: #005f99;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Guia de Utilização do Bot</h1>
+        <img src="imagem" alt="Imagem do Bot">
+        <h1>Guia de Uso</h1>
     </header>
-    <section>
+    <nav>
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="#oque-eu-posso-fazer">❓ O que eu posso fazer?</a></li>
+            <li><a href="#primeiros-passos">📍 Primeiros passos</a></li>
+            <li><a href="#configuracoes">⚙️ Configurações</a></li>
+            <li><a href="#permissoes">🔒 Permissões</a></li>
+            <li><a href="#registros">🔍 Registros</a></li>
+            <li><a href="#apagar">🗑 Apagar</a></li>
+            <li><a href="#livre">🆓 Livre</a></li>
+            <li><a href="#permissao-de-uso">🔑 Permissão de uso</a></li>
+        </ul>
+    </nav>
+    <section id="oque-eu-posso-fazer">
         <h2>❓ O que eu posso fazer?</h2>
         <ul>
             <li>Gerenciar a abertura e fechamento do grupo, removendo permissões de envio de mensagens por um simples comando.</li>
@@ -76,78 +126,39 @@
             <li>Definir quais administradores podem enviar mensagens mesmo com o grupo fechado.</li>
         </ul>
     </section>
-    <section>
+    <section id="primeiros-passos">
         <h2>📍 Primeiros passos</h2>
         <p>Adicione o bot como administrador no grupo com as permissões necessárias para:</p>
         <ul>
             <li>Ler e apagar mensagens corretamente, garantindo o funcionamento esperado.</li>
             <li>Adicionar o bot como administrador do canal (opcional) para registro de ações.</li>
         </ul>
-        <div class="alert">⚠️ Verifique a permissão de uso.</div>
+        <div class="alert">
+            ⚠️ <a href="#permissao-de-uso">Verifique a permissão de uso.</a>
+        </div>
     </section>
-    <section>
+    <section id="configuracoes">
         <h2>⚙️ Configurações</h2>
         <p>Você pode configurar o bot enviando o comando:</p>
         <ul>
             <li><code>/menu</code> - Acessa as configurações.</li>
         </ul>
-        <p>A tela de configurações mostrará:</p>
-        <ul>
-            <li><b>Estado:</b> Grupo aberto ou fechado.</li>
-            <li><b>Apagar:</b> Se o bot apagará mensagens quando o grupo estiver fechado.</li>
-            <li><b>Registros:</b> Indica se há um canal de registros definido.</li>
-            <li><b>Permitidos:</b> Administradores com permissão.</li>
-            <li><b>Vencimento:</b> Data de validade da permissão de uso.</li>
-        </ul>
-        <div class="alert">⚠️ Apenas administradores com permissão para alterar os dados podem acessar as configurações.</div>
     </section>
-    <section>
+    <section id="permissoes">
         <h2>🔒 Permissões</h2>
-        <p>Defina quais administradores podem abrir e fechar o grupo. Eles não terão suas mensagens apagadas quando o grupo estiver fechado.</p>
-        <ul>
-            <li>Defina permissões clicando no botão com o nome do administrador.</li>
-        </ul>
+        <p>Defina quais administradores podem abrir e fechar o grupo.</p>
     </section>
-    <section>
-        <h2>🔍 Registros</h2>
-        <p>Configure um canal para registrar:</p>
-        <ul>
-            <li>Abertura e fechamento do grupo.</li>
-            <li>Definições de administradores livres.</li>
-        </ul>
-        <div class="alert">⚠️ O bot precisa ser adicionado como administrador do canal.</div>
-    </section>
-    <section>
-        <h2>🗑 Apagar</h2>
-        <p>Defina se mensagens de administradores sem permissão serão apagadas quando o grupo estiver fechado.</p>
-        <ul>
-            <li>Administradores com permissão não terão mensagens apagadas.</li>
-            <li>Mídias serão apagadas assim que carregadas.</li>
-        </ul>
-    </section>
-    <section>
-        <h2>🆓 Livre</h2>
-        <p>Permita que administradores sem permissão enviem mensagens sem serem apagadas:</p>
-        <ul>
-            <li>Use os comandos:</li>
-            <ul>
-                <li><code>/livre</code> - Torna um admin livre.</li>
-                <li><code>/nolivre</code> - Remove o livre.</li>
-                <li><code>/listlivre</code> - Lista os livres.</li>
-            </ul>
-        </ul>
-    </section>
-    <section>
+    <section id="permissao-de-uso">
         <h2>🔑 Permissão de uso</h2>
         <p>Adquira a permissão para usar o bot e seus benefícios:</p>
         <ul>
             <li><b>Mensal:</b> R$ 10,00</li>
             <li><b>Semestral:</b> R$ 50,00</li>
         </ul>
-        <p>🔔 Para doação ou suporte, entre em contato.</p>
+        <a href="t.me/moraeshojebot?start=menu_shut" class="btn">Fale com o suporte</a>
     </section>
     <footer>
-        <p>&copy; 2024 Group Shut - Moraeshoje. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Group Shut. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
